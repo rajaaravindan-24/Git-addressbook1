@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 https://maven.apache.org/xsd/settings-1.2.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <server>
+      <username>rajaaravindan5791@gmail.com</username>
+      <password>cmVmdGtuOjAxOjE3ODY2NDMwMjQ6RHJ4R2QxeUh6WGU3Zm9pMmF3Q0d6NjcyT1VD</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>rajaaravindan5791@gmail.com</username>
+      <password>cmVmdGtuOjAxOjE3ODY2NDMwMjQ6RHJ4R2QxeUh6WGU3Zm9pMmF3Q0d6NjcyT1VD</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>demo_test-libs-release</name>
+          <url>https://trialqc6guv.jfrog.io/artifactory/demo_test-libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>demo_test-libs-snapshot</name>
+          <url>https://trialqc6guv.jfrog.io/artifactory/demo_test-libs-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>demo_test-libs-release</name>
+          <url>https://trialqc6guv.jfrog.io/artifactory/demo_test-libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>demo_test-libs-snapshot</name>
+          <url>https://trialqc6guv.jfrog.io/artifactory/demo_test-libs-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+</settings>
+
